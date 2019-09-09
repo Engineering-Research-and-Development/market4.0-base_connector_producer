@@ -11,11 +11,3 @@ services:
     volumes:
       - ./activemq/data:/opt/activemq/data
       - ./etc:/execution-core-container
-  portainer:
-    image: portainer/portainer
-    container_name: "connector-ui"
-    volumes:
-      - ./portainer:/data
-      - /var/run/docker.sock:/var/run/docker.sock
-    ports:
-      - "9000:9000"
